@@ -6,7 +6,7 @@ set(CMAKE_C_STANDARD 99)
 include_directories(.)
 
 add_library(libmem SHARED memory.c)
-add_library(libchunk SHARED chunk.c value.c debug.c)
+add_library(libchunk SHARED chunk.c value.c debug.c vm.h vm.c)
 
 
 add_executable(c_lox main.c)
